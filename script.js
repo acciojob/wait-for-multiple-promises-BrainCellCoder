@@ -20,7 +20,7 @@ const startTime = performance.now();
 
 // Set initial loading text in the table
 const outputElement = document.getElementById('output');
-outputElement.innerHTML = '<tr id="loading"><td colspan="2">loading...</td></tr>';
+outputElement.innerHTML = '<tr id="loading"><td colspan="2">Loading...</td></tr>';
 
 // Use Promise.all to wait for all promises to resolve
 Promise.all(promises)
