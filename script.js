@@ -3,7 +3,7 @@ function createRandomPromise(id) {
     return new Promise((resolve) => {
         const time = Math.random() * 2 + 1; // Random time between 1 and 3 seconds
         setTimeout(() => {
-            resolve({ id, time });
+            resolve({ id, time })
         }, time * 1000);
     });
 }
@@ -20,7 +20,7 @@ const startTime = performance.now();
 
 // Set initial loading text in the table
 const outputElement = document.getElementById('output');
-outputElement.innerHTML = '<tr><td colspan="2">Loading...</td></tr>';
+outputElement.innerHTML = '<tr id="loading"><td colspan="2">loading...</td></tr>';
 
 // Use Promise.all to wait for all promises to resolve
 Promise.all(promises)
